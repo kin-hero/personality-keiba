@@ -59,9 +59,9 @@ const QuestionPage = () => {
   return (
     <div className="bg-custom min-h-screen flex items-center justify-center">
       <div className="max-w-lg bg-white rounded-lg shadow-md p-6">
-        <h1 className="text-2xl font-bold mb-4">Question {currentQuestionIndex + 1}</h1>
+        <h1 className="text-2xl font-bold mb-4 font-heading">Question {currentQuestionIndex + 1}</h1>
         <h2 className="text-lg font-semibold mb-4">{question.question}</h2>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 ">
           {question.options.map((option, index) => (
             <div
               key={index}
