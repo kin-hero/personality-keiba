@@ -57,3 +57,9 @@ const bettingQuestions = [
 ];
 
 export default bettingQuestions;
+
+[
+  ["A", "B", "D"],
+  ["C", "C", "C", "C", "C"],
+  ["C", "C"],
+];
