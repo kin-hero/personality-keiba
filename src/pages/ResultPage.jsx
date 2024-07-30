@@ -1,11 +1,11 @@
 import { useSearchParams } from "react-router-dom";
+import TwitterButtonAtom from "../components/atom/TwitterButtonAtom";
 
 const ResultPage = () => {
   const [searchParams] = useSearchParams();
   const mostSelectedOption = searchParams.get("mostSelectedOption");
 
   let personalityType;
-  let imageUrl;
   let explanationPersonality;
   switch (mostSelectedOption) {
     case "AA":
@@ -89,6 +89,7 @@ const ResultPage = () => {
           </div>
         </div>
       </div>
+      <TwitterButtonAtom personalityType={personalityType} explanationPersonality={explanationPersonality} />
     </div>
   );
 };
