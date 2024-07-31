@@ -86,10 +86,10 @@ const ResultPage = () => {
           <h2 className="text-2xl mt-4 font-heading font-bold underline">{personalityType}</h2>
           <div className="flex justify-center mt-4 flex-col items-center">
             <p className="mt-8 text-2xl">{explanationPersonality}</p>
+            <TwitterButtonAtom personalityType={personalityType} explanationPersonality={explanationPersonality} />
           </div>
         </div>
       </div>
-      <TwitterButtonAtom personalityType={personalityType} explanationPersonality={explanationPersonality} />
     </div>
   );
 };
